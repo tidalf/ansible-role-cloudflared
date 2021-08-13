@@ -48,3 +48,7 @@ retries: {{ cf_tunnel.value.retries }}
 {% if cf_tunnel.value.no_chunked_encoding is defined %}
 no-chunked-encoding: {{ cf_tunnel.value.no_chunked_encoding }}
 {% endif %}
+{% if cf_tunnel.value.warp_routing is defined %}
+warp-routing:
+  enabled: true
+{% endif %}
